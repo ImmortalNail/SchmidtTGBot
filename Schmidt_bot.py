@@ -18,7 +18,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 def connect_to_sheet():
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/spreadsheets",
              "https://www.googleapis.com/auth/drive.file", "https://www.googleapis.com/auth/drive"]
-    creds = ServiceAccountCredentials.from_json_keyfile_name(r"D:\Work\TGBot\Schmidt_bot.json", scope)
+    creds = ServiceAccountCredentials.from_json_keyfile_name(Schmidt_bot.json", scope)
     client = gspread.authorize(creds)
     sheet = client.open("BarTour_Bot_Data").sheet1
     return sheet
