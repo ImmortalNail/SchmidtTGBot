@@ -9,7 +9,7 @@ from datetime import datetime
 
 # Загрузка токена
 load_dotenv()
-TOKEN = os.getenv("7572240019:AAE7FqcATdy4yxWc9uPIFL-6NxV0fuY_AeI")
+TOKEN = os.getenv("BOT_TOKEN")
 
 # Настройка логов
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
